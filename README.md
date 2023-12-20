@@ -18,3 +18,10 @@ So, as a final (?) chapter of TextBar's story, I'm posting the soure-code. I've 
 
 ## Epilogue
 Thanks.
+
+## Instructions
+
+* Clone repo
+* Run `pods install` (requires cocoapods)
+* Open `TextBar.xcworkspace` in Xcode
+* Build + Run
