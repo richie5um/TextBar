@@ -1,0 +1,22 @@
+PODS:
+  - GCDWebServer (3.3.3):
+    - GCDWebServer/Core (= 3.3.3)
+  - GCDWebServer/Core (3.3.3)
+  - MASShortcut (2.3.6)
+
+DEPENDENCIES:
+  - GCDWebServer (~> 3.0)
+  - MASShortcut
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GCDWebServer
+    - MASShortcut
+
+SPEC CHECKSUMS:
+  GCDWebServer: 1c39a1f0763e4eb492bee021e4270fce097d3555
+  MASShortcut: 9c215e8a8a78f3d01ce56da48e2730ab66b538fa
+
+PODFILE CHECKSUM: 782bbd99e3e834750c9f55056a6beb2427cdb564
+
+COCOAPODS: 1.10.2

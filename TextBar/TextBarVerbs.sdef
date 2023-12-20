@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+
+<!-- declare the namespace for using XInclude so we can include the standard suite -->
+<dictionary title="TextBar Terminology">
+    <suite name="TextBar Suite" code="tbar" description="TextBar app scripting.">
+        
+        <command name="refreshAll" code="tbarrall" description="Refresh all TextBar items">
+            <cocoa class="RSTextBarScriptRefreshAll"/>
+        </command>
+
+        <command name="refreshEnabledIndex" code="tbreridx" description="Refresh TextBar item by index (enabled items)">
+            <cocoa class="RSTextBarScriptRefreshEnabledIndex"/>
+            <direct-parameter type="integer"/>
+        </command>
+
+        <command name="refreshIndex" code="tbarridx" description="Refresh TextBar item by index (all items)">
+            <cocoa class="RSTextBarScriptRefreshIndex"/>
+            <direct-parameter type="integer"/>
+        </command>
+
+        <command name="itemCount" code="tbaritmc" description="Get count of TextBar items">
+            <cocoa class="RSTextBarScriptItemCount"/>
+            <result type="number"/>
+        </command>
+
+        <command name="enabledItemCount" code="tbreitmc" description="Get count of enabled TextBar items">
+            <cocoa class="RSTextBarScriptEnabledItemCount"/>
+            <result type="number"/>
+        </command>
+
+        <!--
+        <command name="items" code="tbaritms" description="Get TextBar items">
+            <cocoa class="RSTextBarScriptItems"/>
+            <result type="array" description="the current textbar items"/>
+        </command>
+        -->
+    </suite>
+</dictionary>

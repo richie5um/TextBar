@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+    </head>
+    <!-- OnContextMenu prevents the right-click, but, we need that for WebInspector debugging -->
+<!--    <body style="padding: 0px; margin: 0px;" oncontextmenu="return false;">-->
+        <body style="padding: 0px; margin: 0px;">
+
+<!--    <body style="padding: 4px 0px 2px 0px; margin: 0px; background-color: #666;" >-->
+<canvas id="chartCanvas" width="{{ canvasWidth }}" height="{{ canvasHeight }}" style="margin: 2px; border: 0px #a00 solid;"></canvas>
+<!--        <canvas id="chartCanvas" width="{{ canvasWidth }}" height="{{ canvasHeight }}"></canvas>-->
+<script>
+
+Chart.defaults.global.responsive = false;
+Chart.defaults.global.animation.duration = 0;
+Chart.defaults.global.legend.display = false;
+Chart.defaults.global.title.display = false;
+Chart.defaults.global.showLines = false;
+Chart.defaults.global.tooltips.enabled = false;
+Chart.defaults.scale.display = false;
+Chart.defaults.global.layout.padding.top = 0;
+Chart.defaults.global.layout.padding.bottom = 0;
+Chart.defaults.global.elements.point.radius = 0;
+Chart.defaults.global.elements.line.borderWidth = 1;
+Chart.defaults.global.elements.line.borderColor = "rgba(0,255,0,1)";
+Chart.defaults.global.elements.line.backgroundColor = "rgba(0,0,0,0)";
+Chart.defaults.global.elements.arc.borderWidth = 1;
+Chart.defaults.global.elements.arc.borderColor = "rgba(0,255,0,1)";
+Chart.defaults.global.elements.arc.backgroundColor = "rgba(0,0,0,0)";
+Chart.defaults.global.elements.rectangle.borderWidth = 1;
+Chart.defaults.global.elements.rectangle.borderColor = "rgba(0,255,0,1)";
+Chart.defaults.global.elements.rectangle.backgroundColor = "rgba(0,0,0,0)";
+
+var cnvs = document.getElementById("chartCanvas");
+cnvs.width = {{ canvasWidth }};
+cnvs.height = {{ canvasHeight }};
+
+var chartContext = document.getElementById("chartCanvas").getContext('2d');
+var chartGraph;
+
+var defaultChart = {
+    type: 'line',
+    data: {
+        datasets: []
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                    type: "time"
+            }]
+        }
+    }
+};
+
+function setChartData(chartData, timeRange) {
+    if (!chartData.type) {
+        chartData.type = defaultChart.type;
+    }
+
+    if (undefined === timeRange) {
+        // Default to last 15 mins
+        timeRange = -15;
+    }
+    
+    timeRange = undefined
+
+    if (undefined !== timeRange) {
+        var timeMax = new Date();
+        var timeMin = moment(timeMax).add(timeRange, 'm').toDate();
+
+        defaultChart.options.scales.xAxes[0].time = { min: timeMin, max: timeMax };
+    }
+
+    if (!chartData.options) {
+        chartData.options = defaultChart.options;
+    }
+    
+    if (undefined !== chartGraph) {
+        chartGraph.destroy();
+        chartGraph = undefined;
+    }
+    
+    chartGraph = new Chart(chartContext, chartData);
+    
+    console.log(JSON.stringify(JSON.decycle(chartData), undefined, 2));
+    
+    return chartData;
+}
+
+{{ setChartDataFunc }}
+
+</script>
+</body>
+</html>
