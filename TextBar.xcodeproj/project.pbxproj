@@ -18,8 +18,6 @@
 		BA4BDBF01F5C986300AB321C /* NSFileManager+AppSupportFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4BDBEF1F5C986300AB321C /* NSFileManager+AppSupportFolder.m */; };
 		BA4C81F61ADBB5FA00F1D041 /* NSImage+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4C81F51ADBB5FA00F1D041 /* NSImage+Extended.m */; };
 		BA5B66941F7D9DC2004208ED /* RSTextBarItemExportWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5B66931F7D9DC2004208ED /* RSTextBarItemExportWindow.m */; };
-		BA5CD8FA1C10EE0000CAC367 /* textbar-relayfm-action.sh in Resources */ = {isa = PBXBuildFile; fileRef = BA5CD8F81C10EE0000CAC367 /* textbar-relayfm-action.sh */; };
-		BA5CD8FB1C10EE0000CAC367 /* textbar-relayfm.sh in Resources */ = {isa = PBXBuildFile; fileRef = BA5CD8F91C10EE0000CAC367 /* textbar-relayfm.sh */; };
 		BA6432DE1E2D600F009513C9 /* WebViewNewWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6432DD1E2D600F009513C9 /* WebViewNewWindow.m */; };
 		BA666FD81F7AB13A00CDCB55 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA666FD71F7AB13A00CDCB55 /* NSString+Extensions.m */; };
 		BA666FDB1F7BD9C200CDCB55 /* RSTextBarItemImportWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BA666FDA1F7BD9C200CDCB55 /* RSTextBarItemImportWindow.m */; };
@@ -1249,8 +1247,6 @@
 		BA4C81F51ADBB5FA00F1D041 /* NSImage+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Extended.m"; sourceTree = "<group>"; };
 		BA5B66921F7D9DC2004208ED /* RSTextBarItemExportWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSTextBarItemExportWindow.h; sourceTree = "<group>"; };
 		BA5B66931F7D9DC2004208ED /* RSTextBarItemExportWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSTextBarItemExportWindow.m; sourceTree = "<group>"; };
-		BA5CD8F81C10EE0000CAC367 /* textbar-relayfm-action.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "textbar-relayfm-action.sh"; sourceTree = "<group>"; };
-		BA5CD8F91C10EE0000CAC367 /* textbar-relayfm.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "textbar-relayfm.sh"; sourceTree = "<group>"; };
 		BA6432DC1E2D600F009513C9 /* WebViewNewWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewNewWindow.h; sourceTree = "<group>"; };
 		BA6432DD1E2D600F009513C9 /* WebViewNewWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewNewWindow.m; sourceTree = "<group>"; };
 		BA666FD61F7AB13A00CDCB55 /* NSString+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
@@ -1285,7 +1281,6 @@
 		BABB13E41F705C80008B2857 /* RSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSImageView.m; sourceTree = "<group>"; };
 		BAD3BA971FEC60AE00A80639 /* RSTextBarConfirmationWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSTextBarConfirmationWindow.h; sourceTree = "<group>"; };
 		BAD3BA981FEC60AE00A80639 /* RSTextBarConfirmationWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSTextBarConfirmationWindow.m; sourceTree = "<group>"; };
-		BAD518D92079503600A4DA44 /* TouchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBar.h; sourceTree = "<group>"; };
 		BADC73881D31A33300CA5507 /* RSTextBarScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTextBarScript.h; sourceTree = "<group>"; };
 		BADC73891D31A33300CA5507 /* RSTextBarScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTextBarScript.m; sourceTree = "<group>"; };
 		BADC738B1D31A54F00CA5507 /* RSTemporaryDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTemporaryDirectory.h; sourceTree = "<group>"; };
@@ -2512,8 +2507,6 @@
 			children = (
 				BA9876D01FA28F050050FDF3 /* textbar-chart.html */,
 				BA3AF92B1C3E918E00AD2465 /* textbar-pictures.py */,
-				BA5CD8F81C10EE0000CAC367 /* textbar-relayfm-action.sh */,
-				BA5CD8F91C10EE0000CAC367 /* textbar-relayfm.sh */,
 			);
 			name = EmbeddedScripts;
 			sourceTree = "<group>";
@@ -2661,7 +2654,6 @@
 				BA467BA91F90099100806787 /* TextBar1024.png */,
 				BA6432DC1E2D600F009513C9 /* WebViewNewWindow.h */,
 				BA6432DD1E2D600F009513C9 /* WebViewNewWindow.m */,
-				BAD518D92079503600A4DA44 /* TouchBar.h */,
 				DBE1668BA84E081E0F82F3C2 /* Resources */,
 			);
 			path = TextBar;
@@ -4625,7 +4617,6 @@
 				E960F96D18450E4E00AB29FF /* joystick_filled-32.png in Resources */,
 				E960F9BE18450E4E00AB29FF /* megaphone-32.png in Resources */,
 				E960FBD518450E4E00AB29FF /* wedding_rings-32.png in Resources */,
-				BA5CD8FB1C10EE0000CAC367 /* textbar-relayfm.sh in Resources */,
 				E960FB1618450E4E00AB29FF /* speech_bubble_filled-32.png in Resources */,
 				E960FB3518450E4E00AB29FF /* surface-32.png in Resources */,
 				E960F84B18450E4E00AB29FF /* cook-32.png in Resources */,
@@ -4893,7 +4884,6 @@
 				E960F8B118450E4E00AB29FF /* end-32.png in Resources */,
 				E960FA5518450E4E00AB29FF /* power_point-32.png in Resources */,
 				E960F8D818450E4E00AB29FF /* firing_gun-32.png in Resources */,
-				BA5CD8FA1C10EE0000CAC367 /* textbar-relayfm-action.sh in Resources */,
 				E960F98118450E4E00AB29FF /* laptop-32.png in Resources */,
 				E960F9BD18450E4E00AB29FF /* medium_volume-32.png in Resources */,
 				E960F9AD18450E4E00AB29FF /* magazine-32.png in Resources */,

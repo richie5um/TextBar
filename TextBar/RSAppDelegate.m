@@ -21,7 +21,6 @@
 #import "RSTextBarImages.h"
 #import "WebViewNewWindow.h"
 #import "RSTextBarItemTableCellView.h"
-#import "TouchBar.h"
 
 #include <math.h>
 
